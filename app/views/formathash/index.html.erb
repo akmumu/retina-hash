@@ -1,0 +1,24 @@
+
+<%= render "share/nav" %>
+<div class="contain">
+  <h3>&nbsp;I don't like ruby's hash style on the command line&nbsp;<span class="label label-warning">哎</span></h3>
+  <textarea class="form-control" rows="10" id="hash_text">
+  "{\"baidu\"=>{\"provider\"=>\"baidu\", \"uid\"=>\"1677930031\", \"info\"=>{\"user_name\"=>\"297193792\", \"uid\"=>\"1677930031\", \"is_app_user\"=>\"1\", \"name\"=>nil}, \"credentials\"=>{\"token\"=>\"21.42393718b409c614f337091e5580fc0e.2592000.1417269154.1677930031-764874\", \"refresh_token\"=>\"22.0a473d14f072755f007e7589251949c4.315360000.1730037154.1677930031-764874\", \"expires_at\"=>1417269154, \"expires\"=>true}, \"extra\"=>{}}}"
+  </textarea>
+  <div class="progress" style="margin-bottom:0px;width:100%;">
+    <div id="progress_bar" class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%; display:none;">
+    </div>
+    <div style="width:100%;float:left;">
+      <button type="button" id="format_hash" class="btn btn-danger btn-xs btn-block">FORMAT</button>
+    </div>
+  </div>
+  <pre class="prettyprint linenums">
+  <span id="the_format_data"></span>
+  </pre>
+  <div class="page-header">
+    <h1>&nbsp;I can see It !<small> 哈哈哈</small></h1>
+  </div>
+</div>
+<script>
+window.Formathash.init();
+</script>

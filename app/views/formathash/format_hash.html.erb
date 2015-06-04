@@ -1,0 +1,40 @@
+test
+<%#= @text %>
+<pre class="prettyprint linenums">
+<span class="tank">
+the_hash
+<%= raw @the_hash %>
+
+
+</span>
+javaskr
+<%= raw @javaskr %>
+htmlspans
+<%= raw @htmlspans %>
+htmlspans end
+
+@abc.each
+<% @abc.each do |key,value| %>
+<% if value.is_a?(Hash) %>
+<script type="text/javascript">
+  Formathash.way1hash("<%= key %>","{","<%= @max_key - key.length %>");
+</script>
+<% else %>
+<script type="text/javascript">
+  Formathash.way1hash("<%= key %>","<%= value %>","<%= @max_key - key.length %>");
+</script>
+<% end %>
+<% end %>
+render hash
+<%= render 'hash' %>
+
+<%= raw @the_hash %>
+</pre>
+<p onclick="Formathash.way1hash('a');">a</p>
+<script type="text/javascript">
+
+  $(function(){
+    var the_hash = '<%= @the_hash %>'
+    //Formathash.init(the_hash);
+  });
+</script>

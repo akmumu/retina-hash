@@ -10,7 +10,7 @@ set :log_level, :debug
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server '182.92.183.96', user: "#{fetch(:deploy_user)}", roles: %w{app web}
+server '192.243.119.111', user: "#{fetch(:deploy_user)}", roles: %w{app web}, port: 29115
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 

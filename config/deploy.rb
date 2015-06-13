@@ -3,7 +3,7 @@ set :stages, ['beta', 'staging', 'release']
 lock '3.4.0'
 
 set :application, 'retina-data'
-set :repo_url, 'git@github.com:akmumu/retina-data.git'
+set :repo_url, 'git@github.com:akmumu/retina-hash.git'
 set :deploy_user, 'admin'
 set :deploy_to, "/home/#{fetch(:deploy_user)}/akmumu/www/#{fetch(:application)}"
 set :scm, :git
@@ -23,7 +23,7 @@ set :assets_upload_roles, [:asset_upload]
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default value for :log_level is :debug
-# set :log_level, :debug
+set :log_level, :debug
 
 # Default value for :pty is false
 # set :pty, true
